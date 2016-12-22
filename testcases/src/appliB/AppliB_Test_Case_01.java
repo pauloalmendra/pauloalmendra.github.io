@@ -1,0 +1,39 @@
+package appliB;
+
+import config.Sequence;
+
+/**
+ * @class AppliB_Test_Case_01
+ * @test AppliB_Test_Case_01
+ * 
+ * 
+ * @author almendra
+ */
+public class AppliB_Test_Case_01 extends Sequence {
+
+	@Override
+	public void initialCondition() {
+		
+	}
+
+	@Override
+	public void exec() {
+		step1();
+		step2();
+	}
+	
+	/**
+	 * 
+	 */
+	public void step1() {
+		
+	}
+	
+	/**
+	 * 
+	 */
+	public void step2() {
+		
+	}
+	
+}
