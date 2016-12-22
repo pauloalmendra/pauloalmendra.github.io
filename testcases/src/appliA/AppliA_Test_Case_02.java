@@ -3,7 +3,6 @@ package appliA;
 import config.Sequence;
 
 /**
- * @file
  * @class AppliA_Test_Case_02
  * @test AppliA_Test_Case_02
  * 
@@ -24,17 +23,57 @@ public class AppliA_Test_Case_02 extends Sequence {
 	}
 	
 	/**
+	 * @brief Step 1 Brief description
 	 * 
+	 * A detailed description can also be added.
 	 */
 	public void step1() {
+	
+		/**
+		 * 1. Execute command x
+		 *  - Check that command is executed successfully
+		 */
+		/*-----------------------------------------------*/
+		/*-----------------------------------------------*/
 		
+		/* ... */
+		
+		/**
+		 * 2. Set variable/parameter x=1 @n
+		 *    Wait a few cycles
+		 *  - Check that procedure step is yyy
+		 */
+		/*-----------------------------------------------*/
+		/*-----------------------------------------------*/
+		
+		/* ... */
 	}
 	
 	/**
+	 * @brief Step 2 Brief description
 	 * 
+	 * A detailed description can also be added.
 	 */
 	public void step2() {
 		
+		/**
+		 * 1. Execute command x
+		 *  - Check that command is executed successfully
+		 */
+		/*-----------------------------------------------*/
+		/*-----------------------------------------------*/
+		
+		/* ... */
+		
+		/**
+		 * 2. Set variable/parameter x=1 @n
+		 *    Wait a few cycles
+		 *  - Check that procedure step is yyy
+		 */
+		/*-----------------------------------------------*/
+		/*-----------------------------------------------*/
+		
+		/* ... */
 	}
 	
 }

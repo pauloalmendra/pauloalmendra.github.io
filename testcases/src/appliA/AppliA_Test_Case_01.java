@@ -3,7 +3,6 @@ package appliA;
 import config.Sequence;
 
 /**
- * @file
  * @class
  * @test AppliA_Test_Case_01
  * 
