@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- -->
+<test>
+  <!-- Identifier: The name by which the test case is formally known -->
+  <identifier>SVTS_APPLI_T_NAME_N</identifier>
+  <!-- Info -->
+  <method>Test</method>
+  <mean>NSVF</mean>
+  <!-- Description -->
+  <description>
+    <!-- An unambiguous description of the reason the test case was developed -->
+	<functional_objectives>
+      <objective>Describe what you want to test in this procedure</objective>
+	  <objective>What are the functional objectives of this scenario</objective>
+	  <objective>Verify xxx</objective>
+	  <objective>Verify yyy</objective>
+    </functional_objectives>
+	<!-- List of the requirements being tested in this test case -->
+	<requirement remark="partial covered">SRS-APPLI-0</requirement>
+    <requirement remark="">SRS-APPLI-1</requirement>
+	<requirement remark="">SRS-APPLI-2</requirement>
+	<!-- Conditions that must be met before this test is executed -->
+	<precondition>CSW Binary loaded in PM-RAM</precondition>
+	<precondition>Another necessary pre-condition to be met before running the test</precondition>
+  </description>
+  
+  <!-- -->
+  <step name="Test switch on">
+	<!-- -->
+    <description>Step 1 Brief Description, e.g., this step validates the correct switch on procedure, etc</description>
+	<!-- List of the requirements being tested in this test step -->
+	<requirement remark="partial covered">SRS-APPLI-0</requirement>
+    <requirement remark="">SRS-APPLI-1</requirement>
+	<requirement remark="">SRS-APPLI-2</requirement>
+	<!-- -->
+	<activity name="Error Case : inconsistent packet length (-1)">
+	  <action>Execute the TC(x,y) with an inconsistent TC packet length (length - 1)</action>
+	  <expected_result>Check that the execution failure report FID_INVALID_LENGTH is sent</expected_result>
+	  <expected_result>Check xxx properties are not updated</expected_result>
+	</activity>
+	  <activity name="Error Case : inconsistent packet length (+1)">
+	  <action>Execute the TC(x,y) with an inconsistent TC packet length (length + 1)</action>
+	  <expected_result>Check that the execution failure report FID_INVALID_LENGTH is sent</expected_result>
+	  <expected_result>Check xxx properties are not updated</expected_result>
+	</activity>
+	  <activity name="Nominal Case : send valid packet">
+	  <action>Execute the TC(x,y) with valid format & content</action>
+	  <expected_result>Check that the TC is accepted and executed successfully</expected_result>
+	  <expected_result>Check xxx properties are updated with the content of the TC</expected_result>
+	</activity>
+  </step>
+  
+  <!-- -->
+  <step name="Test acquisitions">
+    <!-- -->
+    <description>Step 2 Brief Description, e.g., this step validates the correct data is acquired</description>
+	<!-- List of the requirements being tested in this test step -->
+	<requirement remark="partial covered">SRS-APPLI-0</requirement>
+    <requirement remark="">SRS-APPLI-1</requirement>
+	<requirement remark="">SRS-APPLI-2</requirement>
+	<!--  -->
+	<activity name="Error Case : inconsistent packet length (-1)">
+	  <action>Execute the TC(x,y) with an inconsistent TC packet length (length - 1)</action>
+	  <expected_result>Check that the execution failure report FID_INVALID_LENGTH is sent</expected_result>
+	  <expected_result>Check xxx properties are not updated</expected_result>
+	</activity>
+	<activity name="Error Case : inconsistent packet length (+1)">
+	  <action>Execute the TC(x,y) with an inconsistent TC packet length (length + 1)</action>
+	  <expected_result>Check that the execution failure report FID_INVALID_LENGTH is sent</expected_result>
+	  <expected_result>Check xxx properties are not updated</expected_result>
+	</activity>
+  </step>
+  
+</test>
